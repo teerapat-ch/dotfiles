@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+dotfiles_unlink() {
+    if [ -L "${1}" ]; then
+        echo "unlink ${1}"
+        unlink ${1}
+    fi
+}
+
+dotfiles_unlink "${HOME}/.config/nvim/init.vim"
+dotfiles_unlink "${HOME}/.config/nvim/plugin"
