@@ -1,39 +1,12 @@
 #!/usr/bin/env zsh
-# Code from: https://github.com/joshukraine/dotfiles/blob/master/install.sh
-# TODO: Get files automatically instead of having to come and define here
-#
-DOTFILES="${HOME}/dotfiles"
+# Shoutout to ThePrimeagen, code taken from: https://github.com/ThePrimeagen/.dotfiles/blob/master/clean-env
 
-dotfiles_backup() {
-    echo "File or folder found at $1. Backing up to ${1}_bak_$(gdate +"%Y%m%d%3N")"
-    mv -v $1 ${1}_bak_$(gdate +"%Y%m%d%3N")
-}
+pushd $DOTFILES
+for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
+do
+    echo "Installing $folder"
+    stow -D $folder
+    stow $folder
 
-dotfiles_link() {
-    echo "ln -sv ${1} ${2} (file)"
-    ln -sv ${1} ${2}
-}
+done
 
-dotfiles_unlink() {
-    echo "unlink ${1}"
-    unlink ${1}
-}
-
-dotfiles_syncing() {
-    source_dotfile=$1
-    destination_dotfile=$2
-    if [ -L "${destination_dotfile}" ]; then
-        echo "FOUND existed link!"
-        dotfiles_unlink $destination_dotfile
-    fi
-    
-    if [ -f "${destination_dotfile}" ]; then
-        echo "FOUND existed file at ${destination_dotfile}!"
-        echo "Aborting!"
-        exit 1
-    fi
-    dotfiles_link "$source_dotfile" "$destination_dotfile"
-} 
-
-dotfiles_syncing "$DOTFILES/nvim/.config/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
-dotfiles_syncing "$DOTFILES/nvim/.config/nvim/plugin" "${HOME}/.config/nvim/"

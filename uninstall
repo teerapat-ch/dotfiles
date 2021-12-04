@@ -1,11 +1,10 @@
 #!/usr/bin/env zsh
+# Shoutout to ThePrimeagen, code taken from: https://github.com/ThePrimeagen/.dotfiles/blob/master/clean-env
 
-dotfiles_unlink() {
-    if [ -L "${1}" ]; then
-        echo "unlink ${1}"
-        unlink ${1}
-    fi
-}
-
-dotfiles_unlink "${HOME}/.config/nvim/init.vim"
-dotfiles_unlink "${HOME}/.config/nvim/plugin"
+pushd $DOTFILES
+for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
+do
+    echo "Removing $folder"
+    stow -D $folder
+done
+popd

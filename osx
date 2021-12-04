@@ -8,5 +8,17 @@ if [[ -z $DOTFILES ]]; then
     DOTFILES=$HOME/dotfiles
 fi
 
-STOW_FOLDERS=$STOW_FOLDERS DOTFILES=$DOTFILES $DOTFILES/install
+if [[ -z $1 ]]; then
+    echo "No argument supplied!"
+    exit 0
+fi
+
+if [[ $1 = "install" ]]; then
+    STOW_FOLDERS=$STOW_FOLDERS DOTFILES=$DOTFILES $DOTFILES/install
+elif [[ $1 = "uninstall" ]]; then
+    STOW_FOLDERS=$STOW_FOLDERS DOTFILES=$DOTFILES $DOTFILES/uninstall
+else
+    echo "Invalid command. Expected (install, uninstall)"
+    exit 0
+fi
 
