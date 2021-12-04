@@ -15,7 +15,13 @@ Plug 'gruvbox-community/gruvbox' " Color scheme
 " telescope (fzf replacement)
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+" markdown-preview
 " Initialize plugin system
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']} 
+
+Plug 'tpope/vim-commentary' " Comment
+
 call plug#end()
 
 let mapleader = " "
@@ -26,8 +32,8 @@ nnoremap <S-Tab> gT
 nnoremap <silent> <S-t> :tabnew<CR>
 
 " Vim specific
-nnoremap K :m-2<CR>gv=gv
-nnoremap J :m+1<CR>gv=gv
+"nnoremap H :m-2<CR>gv=gv
+" nnoremap L :m+1<CR>gv=gv
 
 " For editing VIMRC
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>

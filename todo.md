@@ -1,10 +1,10 @@
 ## TODO:
 
 ### Things to do/install
-0. Try changing stuff on dotfiles
-1. vim comment
+0. ~~Try changing stuff on dotfiles~~
+1. ~~vim comment~~
 2. Y --> yy. Not sure where this Y habit comes from.
-3. Vim mode on zsh
+3. ~~Vim mode on zsh~~
 
 ### List of things to explore.
 
@@ -19,3 +19,5 @@
 1. lazygit
 2. fugitive
 
+### Markdown
+1. ~~markdown-preview~~ Oh damn this one is great. Hope the latex one is this fast.
