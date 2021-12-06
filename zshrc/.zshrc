@@ -119,9 +119,8 @@ export FZF_DEFAULT_OPTS='--height=70% --preview="cat {}" --preview-window=right:
 
 search-dotfiles() {
 searched_file=$(rg --hidden --glob '!.git' --files ~/dotfiles | fzf)
-    echo $searched_file
     if [[ -z $searched_file ]]; then
-        echo "Exiting"
+        echo "Cancelled, press enter to continue..."
         return
     else
         vim $searched_file
