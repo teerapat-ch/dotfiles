@@ -6,22 +6,35 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'jpalardy/vim-slime'
 Plug 'tpope/vim-surround' " Surround
-Plug 'lervag/vimtex' " For latex
 Plug 'kdheepak/lazygit.nvim'
 Plug 'tibabit/vim-templates' " Generate templates
 
 Plug 'gruvbox-community/gruvbox' " Color scheme
+Plug 'tpope/vim-commentary' " Comment
 
 " telescope (fzf replacement)
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
-" markdown-preview
+" MARKDOWN
+" vim markdown 
+" vim pandoc markdown syntax
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
+
+" Vim table mode
+Plug 'dhruvasagar/vim-table-mode'
+
+" Latex
+Plug 'lervag/vimtex' 
+
+" Coc (Have to look at this later)
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " Call :CocInstall coc-snippets to
+
+" LSP
+Plug 'neovim/nvim-lspconfig'
+
 " Initialize plugin system
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']} 
-
-Plug 'tpope/vim-commentary' " Comment
-
 call plug#end()
 
 let mapleader = " "
@@ -43,6 +56,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" Bring back the escape key
+tnoremap <Esc> <C-\><C-n>
 
 " VIM SLIME
 let g:slime_target = "neovim"

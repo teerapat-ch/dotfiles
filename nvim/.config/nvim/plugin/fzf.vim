@@ -6,6 +6,7 @@ set grepprg=rg\ --vimgrep
 command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 " fzf mapping
 nnoremap <silent> <leader>e :FZF -m<CR>
+nnoremap <silent> <leader>d :FZF ~/dotfiles<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>h :History<CR>
 nnoremap <silent> <leader>H :Helptags!<CR>
@@ -19,5 +20,5 @@ nnoremap <silent> <leader>' :Marks<CR>
 nnoremap <silent> <leader>/ :Rg<CR>
 nnoremap <silent> <leader>C :Commands<CR>
 nnoremap <silent> <leader>M :Maps<CR>
-nnoremap <silent> <leader>s :Filetypes<CR>
+" nnoremap <silent> <leader>s :Filetypes<CR>
 

@@ -103,6 +103,7 @@ export PATH="$HOME/.poetry/bin:${PATH}"
 export VIMRC=$HOME/.config/nvim/init.vim
 export UT=$HOME/lab/uoft
 
+alias vim="nvim" # Now I just type vim instead of having to switch between the two.
 # bindkey -v # Become more troublesome tbh.
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

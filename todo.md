@@ -3,8 +3,9 @@
 ### Things to do/install
 0. ~~Try changing stuff on dotfiles~~
 1. ~~vim comment~~
-2. Y --> yy. Not sure where this Y habit comes from.
+2. ~~Y --> yy. Not sure where this Y habit comes from.~~ I'll try to get use to this
 3. ~~Vim mode on zsh~~
+4. neovim terminal mappings: http://vimcasts.org/episodes/neovim-terminal-mappings/
 
 ### List of things to explore.
 

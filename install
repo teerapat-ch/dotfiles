@@ -10,3 +10,5 @@ do
 
 done
 
+# Scripts I ran
+# pip3 install pynvim neovim-remote

@@ -94,7 +94,9 @@ let g:mkdp_page_title = '「${name}」'
 " these filetypes will have MarkdownPreview... commands
 let g:mkdp_filetypes = ['markdown']
 
+
 " example
-" nmap <C-s> MarkdownPreview
+" nmap <C-s> <Plug>MarkdownPreview
 " nmap <M-s> MarkdownPreviewStop
-" nmap <C-p> MarkdownPreviewToggle
+nmap <C-l> <Plug>MarkdownPreviewToggle
+let g:livepreview_previewer = 'skim'
