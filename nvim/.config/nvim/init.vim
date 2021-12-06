@@ -12,10 +12,6 @@ Plug 'tibabit/vim-templates' " Generate templates
 Plug 'gruvbox-community/gruvbox' " Color scheme
 Plug 'tpope/vim-commentary' " Comment
 
-" telescope (fzf replacement)
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-
 " MARKDOWN
 " vim markdown 
 " vim pandoc markdown syntax
@@ -33,6 +29,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} " Call :CocInstall coc-snippets 
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
+
+" Telescope stuff
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 " Initialize plugin system
 call plug#end()

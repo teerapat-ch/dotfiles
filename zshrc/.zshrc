@@ -106,4 +106,26 @@ export UT=$HOME/lab/uoft
 alias vim="nvim" # Now I just type vim instead of having to switch between the two.
 # bindkey -v # Become more troublesome tbh.
 
+# Search dot files
+# vim $(rg --hidden --glob '!.git' --files ~/dotfiles | fzf)
+
+#============================== FZF STUFF==============================#
+
+export FZF_DEFAULT_OPTS='--height=70% --preview="cat {}" --preview-window=right:60%:wrap'
+# export FZF_DEFAULT_COMMAND='rg --files'
+# export FZF_CTRL_T_COMMAND='$FZF_DEFAULT_COMMAND'
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+search-dotfiles() {
+searched_file=$(rg --hidden --glob '!.git' --files ~/dotfiles | fzf)
+    echo $searched_file
+    if [[ -z $searched_file ]]; then
+        echo "Exiting"
+        return
+    else
+        vim $searched_file
+    fi
+}
+zle     -N   search-dotfiles
+bindkey '^Y' search-dotfiles
