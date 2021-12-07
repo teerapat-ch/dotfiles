@@ -52,3 +52,6 @@ nnoremap <leader>k :m .-2<CR>==
 "
 " Vim slime
 nmap <c-c><c-c> <Plug>SlimeLineSend
+
+" greatest remap ever
+xnoremap <leader>p "_dP
