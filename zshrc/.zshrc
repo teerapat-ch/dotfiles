@@ -128,3 +128,8 @@ searched_file=$(rg --hidden --glob '!.git' --files ~/dotfiles | fzf)
 }
 zle     -N   search-dotfiles
 bindkey '^Y' search-dotfiles
+
+# Hack to use CocCommand Explorer"
+alias nve="nvim -c 'CocCommand explorer'"
+
+

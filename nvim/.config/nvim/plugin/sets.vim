@@ -49,3 +49,6 @@ nnoremap <leader>k :m .-2<CR>==
 " tnoremap <C-k> <C-\><C-n><C-w>k
 " tnoremap <C-l> <C-\><C-n><C-w>l
 " autocmd BufWinEnter,WinEnter term://* startinsert
+"
+" Vim slime
+nmap <c-c><c-c> <Plug>SlimeLineSend
