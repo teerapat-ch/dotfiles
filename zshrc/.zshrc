@@ -131,5 +131,6 @@ bindkey '^Y' search-dotfiles
 
 # Hack to use CocCommand Explorer"
 alias nve="nvim -c 'CocCommand explorer'"
+eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 

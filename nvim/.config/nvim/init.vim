@@ -51,6 +51,11 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend upda
 Plug 'kyazdani42/nvim-web-devicons' " Need this: https://www.nerdfonts.com/font-downloads
 " Plug 'kyazdani42/nvim-tree.lua'
 
+" Theme
+Plug 'EdenEast/nightfox.nvim'
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+
+
 " Git 
 Plug 'doronbehar/nvim-fugitive'
 Plug 'nvim-lualine/lualine.nvim'
@@ -64,10 +69,10 @@ call plug#end()
 
 let mapleader = " "
 
-" tab navigation
-nnoremap <Tab> gt
-nnoremap <S-Tab> gT
-nnoremap <silent> <S-t> :tabnew<CR>
+" " tab navigation
+" nnoremap <Tab> gt
+" nnoremap <S-Tab> gT
+" nnoremap <silent> <S-t> :tabnew<CR>
 
 " Vim specific
 "nnoremap H :m-2<CR>gv=gv
