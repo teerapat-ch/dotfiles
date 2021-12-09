@@ -20,3 +20,12 @@ require("toggleterm").setup{
   shell = vim.o.shell, -- change the default shell
 }
 
+local Terminal  = require('toggleterm.terminal').Terminal
+local python = Terminal:new({ cmd = "python", hidden = true })
+
+function _python_toggle()
+  python:toggle()
+end
+
+vim.api.nvim_set_keymap("n", "<C-p>", "<cmd>lua _python_toggle()<CR>", {noremap = true, silent = true})
+

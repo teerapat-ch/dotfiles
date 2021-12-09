@@ -10,8 +10,8 @@ let g:coc_global_extensions = [
 \ ]
 
 call plug#begin(stdpath('data') . '/plugged')
-Plug 'junegunn/fzf', {'do' : { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', {'do' : { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
 
 Plug 'jpalardy/vim-slime'
 Plug 'tpope/vim-surround' " Surround
@@ -63,6 +63,9 @@ Plug 'nvim-lualine/lualine.nvim'
 " Terminal
 Plug 'akinsho/toggleterm.nvim'
 
+" Running Test
+Plug 'vim-test/vim-test'
+
 
 " Initialize plugin system
 call plug#end()
@@ -105,3 +108,4 @@ let g:tmpl_author_name = "Teerapat Chaiwachirasak"
 
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
+

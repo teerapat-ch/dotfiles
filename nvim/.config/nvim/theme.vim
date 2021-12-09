@@ -6,6 +6,7 @@
 syntax on
 set t_Co=256
 set cursorline
+set termguicolors
 " colorscheme onehalfdark
 " let g:airline_theme='onehalfdark'
 
