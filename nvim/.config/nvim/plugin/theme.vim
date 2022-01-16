@@ -7,10 +7,10 @@ syntax on
 set t_Co=256
 set cursorline
 colorscheme onehalfdark
+set termguicolors
 let g:airline_theme='onehalfdark'
 " lightline
 " let g:lightline = { 'colorscheme': 'onehalfdark' }
-
 " " Gruvbox color
 " colorscheme gruvbox
 " highlight Normal guibg=none

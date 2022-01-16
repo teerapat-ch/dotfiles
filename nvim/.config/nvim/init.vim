@@ -58,6 +58,8 @@ Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
 " Git 
 Plug 'doronbehar/nvim-fugitive'
+
+" Like airline but written in lua
 Plug 'nvim-lualine/lualine.nvim'
 
 " Terminal
@@ -66,6 +68,16 @@ Plug 'akinsho/toggleterm.nvim'
 " Running Test
 Plug 'vim-test/vim-test'
 
+Plug 'Manas140/run.nvim'
+
+" Jupyter on vim.
+Plug 'goerz/jupytext.vim'
+
+" Marks
+Plug 'chentau/marks.nvim'
+
+" Tab bar
+Plug 'akinsho/bufferline.nvim'
 
 " Initialize plugin system
 call plug#end()
@@ -108,4 +120,8 @@ let g:tmpl_author_name = "Teerapat Chaiwachirasak"
 
 let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
-
+" In your init.lua or init.vim
+set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF

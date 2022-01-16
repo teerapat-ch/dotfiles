@@ -23,6 +23,8 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
+set mouse+=a " For the barbar (tab bar)
+
 " MUST HAVE VIM REMAPS from ThePrimeagens: https://www.youtube.com/watch?v=hSHATqh8svM
 "
 " Keeping it centered
@@ -55,3 +57,9 @@ nmap <c-c><c-c> <Plug>SlimeLineSend
 
 " greatest remap ever
 xnoremap <leader>p "_dP
+
+" Use s instead of <C-w> to handle windows
+" nnoremap s <C-w>
+
+noremap <Leader>y "*y
+
