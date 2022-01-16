@@ -8,4 +8,7 @@ To install, git clone this into your dom
 
 #### Installation
 
+`$ ./osx [install|uninstall]`
 
+Install will use stow to do smart symlink for each of the specified directory to the correct place. 
+Only testet on macOS.
