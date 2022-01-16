@@ -1,12 +1,14 @@
 ### My dotfiles
 
-To install, git clone this into your dom
+![It works on my machine ](public/it_works_on_my_machine.jpeg)
 
 #### Screen shot
 
 ![Screenshot](public/screenshot.png)
 
 #### Installation
+
+To install, git clone this into your machine, then run 
 
 `$ ./osx [install|uninstall]`
 
