@@ -55,7 +55,6 @@ Plug 'kyazdani42/nvim-web-devicons' " Need this: https://www.nerdfonts.com/font-
 Plug 'EdenEast/nightfox.nvim'
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 
-
 " Git 
 Plug 'doronbehar/nvim-fugitive'
 
