@@ -64,6 +64,7 @@ Plug 'nvim-lualine/lualine.nvim'
 " Terminal
 Plug 'akinsho/toggleterm.nvim'
 
+
 " Running Test
 Plug 'vim-test/vim-test'
 
