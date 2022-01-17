@@ -78,9 +78,14 @@ Plug 'chentau/marks.nvim'
 
 " nvim-bqf (Quickfix list)
 Plug 'kevinhwang91/nvim-bqf'
+Plug 'stevearc/qf_helper.nvim'
 
 " Tab bar
 Plug 'akinsho/bufferline.nvim'
+
+" Scrollbar
+Plug 'Xuyuanp/scrollbar.nvim'
+
 
 " Initialize plugin system
 call plug#end()
