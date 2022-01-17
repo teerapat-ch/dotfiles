@@ -76,6 +76,9 @@ Plug 'goerz/jupytext.vim'
 " Marks
 Plug 'chentau/marks.nvim'
 
+" nvim-bqf (Quickfix list)
+Plug 'kevinhwang91/nvim-bqf'
+
 " Tab bar
 Plug 'akinsho/bufferline.nvim'
 
