@@ -72,4 +72,4 @@ noremap <Leader>y "*y
 " (https://vim.fandom.com/wiki/Highlight_all_search_pattern_matches)
 :set hlsearch
 " Press Space to turn off highlighting and clear any message already displayed.
-:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+:nnoremap <silent> <Leader>/ :nohlsearch<Bar>:echo<CR>
