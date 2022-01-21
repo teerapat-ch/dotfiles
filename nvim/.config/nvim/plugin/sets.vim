@@ -7,6 +7,9 @@ set splitbelow
 set splitright
 " " Set style in dir mode
 let g:netrw_liststyle = 3
+" Autoindent
+set autoindent
+
 
 " VimRC 2021 ThePrimeagen
 set exrc " Load custom rc for each project
@@ -27,10 +30,11 @@ set mouse+=a " For the barbar (tab bar)
 
 " MUST HAVE VIM REMAPS from ThePrimeagens: https://www.youtube.com/watch?v=hSHATqh8svM
 "
-" Keeping it centered
-nnoremap n nzzzv
-nnoremap N Nzzzv
-nnoremap J mzJ'z
+" Keeping it centered (Not loving this, makes it more confusing through
+" searching)
+" nnoremap n nzzzv
+" nnoremap N Nzzzv
+" nnoremap J mzJ'z
 
 " Undo break points
 inoremap , ,<c-g>u
@@ -63,3 +67,9 @@ xnoremap <leader>p "_dP
 
 noremap <Leader>y "*y
 
+
+" Highlight when search 
+" (https://vim.fandom.com/wiki/Highlight_all_search_pattern_matches)
+:set hlsearch
+" Press Space to turn off highlighting and clear any message already displayed.
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>

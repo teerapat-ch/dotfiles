@@ -86,6 +86,10 @@ Plug 'akinsho/bufferline.nvim'
 " Scrollbar
 Plug 'Xuyuanp/scrollbar.nvim'
 
+Plug 'mhinz/vim-startify'
+" PS
+
+"""""" End of Package """""""""
 
 " Initialize plugin system
 call plug#end()
