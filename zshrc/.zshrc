@@ -112,7 +112,9 @@ alias vim="nvim" # Now I just type vim instead of having to switch between the t
 
 #============================== FZF STUFF==============================#
 
-export FZF_DEFAULT_OPTS='--height=70% --preview="cat {}" --preview-window=right:60%:wrap'
+# export FZF_DEFAULT_OPTS='--height=70% --preview="cat {}" --preview-window=right:60%:wrap'
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+
 # export FZF_DEFAULT_COMMAND='rg --files'
 # export FZF_CTRL_T_COMMAND='$FZF_DEFAULT_COMMAND'
 
@@ -134,7 +136,6 @@ bindkey '^Y' search-dotfiles
 alias nve="nvim -c 'CocCommand explorer'"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
