@@ -158,3 +158,9 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 alias lg='lazygit'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/time/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/time/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/time/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/time/google-cloud-sdk/completion.zsh.inc'; fi

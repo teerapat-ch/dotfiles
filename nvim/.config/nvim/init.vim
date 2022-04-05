@@ -64,7 +64,6 @@ Plug 'nvim-lualine/lualine.nvim'
 " Terminal
 Plug 'akinsho/toggleterm.nvim'
 
-
 " Running Test
 Plug 'vim-test/vim-test'
 
@@ -85,8 +84,6 @@ Plug 'akinsho/bufferline.nvim'
 
 " Scrollbar
 Plug 'Xuyuanp/scrollbar.nvim'
-
-Plug 'mhinz/vim-startify'
 " PS
 
 """""" End of Package """""""""
