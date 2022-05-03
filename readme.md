@@ -7,6 +7,12 @@
 
 #### Installation
 
+Install these programs manually
+1. zsh: 
+2. nvim: 
+3. fuzzy: 
+
+
 To install, git clone this into your machine, then run 
 
 `$ ./osx [install|uninstall]`
